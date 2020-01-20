@@ -13,8 +13,6 @@ import pkg from '@mermaid/package.json'
 export let mermaidVersion = pkg.version
 
 onMount(async () => {
-	ga('send', 'pageview');
-	ga('send', 'event', 'version', mermaidVersion, mermaidVersion);
 	fromUrl(params.data);
 });
 
